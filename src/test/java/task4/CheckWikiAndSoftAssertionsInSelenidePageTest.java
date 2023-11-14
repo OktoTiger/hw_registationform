@@ -10,19 +10,18 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CheckWikiAndSoftAssertionsInSelenidePageTest {
-    /    private final String JUNIT5_TEST_CODE = """
-//                @ExtendWith({SoftAssertsExtension.class})
-//                class Tests {
-//                  @Test
-//                  void test() {
-//                    Configuration.assertionMode = SOFT;
-//                    open("page.html");
-//
-//                    $("#first").should(visible).click();
-//                    $("#second").should(visible).click();
-//                  }
-//                }
-//            """;
+          private final String JUNIT5_TEST_CODE = """
+                @ExtendWith({SoftAssertsExtension.class})
+                class Tests {
+                @Test
+                void test() {
+                Configuration.assertionMode = SOFT;
+                open("page.html");
+                $("#first").should(visible).click();
+                 $("#second").should(visible).click();
+                 }
+               }
+               """;
 
 
     @BeforeAll
